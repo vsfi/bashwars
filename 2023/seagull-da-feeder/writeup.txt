@@ -1,0 +1,1 @@
+cat my_web_sites.txt | xargs -I {} sh -c "openssl s_client -connect {}:443 2>/dev/null | openssl x509 -noout -subject -nameopt lname" | grep -v Zarechie | rev | cut -d'=' -f1 | rev | sort -r

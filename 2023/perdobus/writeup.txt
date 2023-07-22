@@ -1,0 +1,13 @@
+Lucy Leach L3Zhci9sb2cvaEJmaFg5cWg2cU16VlIzSy5odG1sCg== /var/log/hBfhX9qh6qMzVR3K.html
+$11.67 L2V0Yy9zc2wvV3ByTkJkTVo5dXc1elU5Yi5jc3YK /etc/ssl/WprNBdMZ9uw5zU9b.csv
+(450) 384-8682 L2xpYi9hcGsvZGIvZ2VnZExxS0hhOXhwN053Qi54bWwK /lib/apk/db/gegdLqKHa9xp7NwB.xml
+<postalZip>93663</postalZip> SXRzU29GdWNraW5nQmlnCg== ItsSoFuckingBig
+
+Есть первый файл 1.json. Найди в нем персонажа Lucy Leach. Где-то у него сказано в base64, где искать следующий файл.
+Во втором файле ищи типа, у которого на балансе $11.67, рядом с ним тоже должен быть base64 до следующего файла.
+У третьего типа ищи номерочек: (450) 384-8682. Все так же, base64
+У четвертого почтовый индекс равен 93663. Он тебе и даст флаг. ГЫ. 
+a=$(cat 1.json | jq '.[] | select(.name=="Lucy Leach") | .friends' | grep name | sed '2q;d' | tr -d "\"" | cut -d ": " -f2 | base64 -d);
+b=$(echo $(cat $a | grep -B 2 "$11.67<" | head -n1 | cut -d"<td>" -f2 | cut -c 4-) | base64 -d);
+c=$(cat $b | grep "(450) 384-8682" | cut -d'"' -f 2 | base64 -d)
+d=$(echo $(cat $c | grep -B 2 93663 | head -n 1 | cut -d ">" -f 2 | cut -d "<" -f 1) | base64 -d); echo $d

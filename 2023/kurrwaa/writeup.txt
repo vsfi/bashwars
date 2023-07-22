@@ -1,0 +1,1 @@
+(gc ./file.json | ConvertFrom-Json).marina_1872.email

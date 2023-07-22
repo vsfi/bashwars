@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> The 3 Best Evangelion Quotes! </title>
+    </head>
+    <body>
+        <h1> The 3 Best Evangelion Quotes! </h1>
+        <p>
+            <a href="https://youtu.be/oyFQVZ2h0V8"> The Entire Cast </a> Congratulations!
+            <a href="https://youtu.be/J8_EU6n3HWo"> Shinji Ikari </a> I Mustn't Run Away.
+            <a href="https://youtu.be/dQw4w9WgXcQ"> Asuka Langley </a> It Is Simply The Duty Of The Elite To Protect The Ignorant Masses.
+        </p>
+    </body>
+</html>

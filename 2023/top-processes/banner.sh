@@ -1,0 +1,15 @@
+#!/bin/sh
+echo -e "\n###############################################################"
+echo -e   "#                                                             #"
+echo -e   "#     We have a dump of ps output in /home/vsfi/dump.txt,     #"
+echo -e   "#  tell me who are these people who use our server the most.  #"
+echo -e   "#     I want to know details about TOP-10 processes that      #"
+echo -e   "#           consume the most memory on this device.           #"
+echo -e   "#   Username, process and consumed memory, but nothing more.  #"
+echo -e   "#                                                             #"
+echo -e   "#      The problem is that you don't have common reading      #"
+echo -e   "#         utilities from coreutils, mostly pure bash.         #"
+echo -e   "#                         Good luck!                          #"
+echo -e   "#                                                             #"
+echo -e   "###############################################################"
+bash

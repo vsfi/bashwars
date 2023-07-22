@@ -1,0 +1,5 @@
+sed -n '31337p' file
+
+cut -d$'\n' -f 31337 file 
+
+head -n 31337 file | tail -n 1

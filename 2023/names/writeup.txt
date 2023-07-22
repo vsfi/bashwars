@@ -1,0 +1,1 @@
+cat name_list | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -vwFf stoplist | wc -w

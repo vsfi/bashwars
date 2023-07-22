@@ -1,0 +1,1 @@
+for line in `ls -1 task`; do if [[ ${line##*.} == "gz" ]]; then zcat task/$line; else lzcat task/$line; fi; done | tr -d '\n'; echo

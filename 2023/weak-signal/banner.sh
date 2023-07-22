@@ -1,0 +1,10 @@
+echo -e "\n#########################################################################"
+echo -e   "#                                                                       #"
+echo -e   "#       We've found a a really bad stream on signal.vsfi.org:8745       #"
+echo -e   "#  There's a lot of noise, but some say it's a QR-code and only spaces  #"
+echo -e   "#                     and rectangles ('█') matter.                      #"
+echo -e   "#           '$' is a line break and '&' is the end of message           #"
+echo -e   "#     The stream in infinite, so you might want to use empty stdbuf     #"
+echo -e   "#                                                                       #"
+echo -e   "#########################################################################"
+sh

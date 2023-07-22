@@ -1,0 +1,10 @@
+User: wkidd, Memory: 976172, Command: tail
+User: blackbeard, Memory: 434584, Command: /usr/bin/plasmashell
+User: fannybaws, Memory: 429616, Command: /snap/firefox/2760/usr/lib/firefox/firefox
+User: blackbeard, Memory: 390344, Command: /usr/lib/libreoffice/program/soffice.bin
+User: fannybaws, Memory: 336616, Command: /usr/bin/plasmashell
+User: root, Memory: 333852, Command: wireshark
+User: fannybaws, Memory: 305196, Command: /snap/firefox/2760/usr/lib/firefox/firefox
+User: fannybaws, Memory: 250288, Command: /usr/bin/kded5
+User: blackbeard, Memory: 240052, Command: /usr/bin/kded5
+User: j.silver, Memory: 224976, Command: stress

@@ -1,0 +1,1 @@
+find eva-00 -type f -name "*.txt" -exec sed -n '2p' {} \; | sort -nr | uniq

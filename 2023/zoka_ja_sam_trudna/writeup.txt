@@ -1,0 +1,1 @@
+find files -type f -exec ls -lh "{}" \; | sort | head -n1 | rev | awk '{print $1}' | rev | xargs cat

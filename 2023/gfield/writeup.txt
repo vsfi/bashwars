@@ -1,0 +1,1 @@
+seq 0 100 | xargs -I {} date -d 'mon +{} week' +'%Y%m%d' | grep 2023 | xargs -I % curl stats.vsfi.org/dt=%

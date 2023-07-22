@@ -1,0 +1,1 @@
+timeout 60s nc signal.vsfi.org 8745 | stdbuf -o0 cut -d"&" -f1 | stdbuf -o0 tr '$' '\n' | stdbuf -o0 tr -d '[a-zA-Z0-9]'
