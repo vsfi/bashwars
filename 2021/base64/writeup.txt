@@ -1,0 +1,1 @@
+grep -R $(echo 'VSFI_' | base64 | head -c4) . | cut -d':' -f1

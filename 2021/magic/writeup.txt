@@ -1,0 +1,1 @@
+curl -Ss http://localhost:5000/usrs | jq -r '.[] | select((.surname | startswith("B")) and (.name | contains("egor")) and (.number | test("79[23]7[0-57-9]*8$")) and (.surname | length > 5)).number' | sed 's/+/%2b/g' | xargs -I '{}' curl -Ss -X POST --data "post_parameter={}" http://localhost:5000/ya?sde=lal | jq -r '.flag'

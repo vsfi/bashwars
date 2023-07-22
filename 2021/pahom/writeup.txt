@@ -1,0 +1,1 @@
+curl -Ss -L --cookie cookie.txt --user-agent Gecko --cookie-jar cookie.txt http://localhost:5000/ | jq -r '.nextUrl' | xargs curl --cookie cookie.txt -Ss | jq -r '.flag'

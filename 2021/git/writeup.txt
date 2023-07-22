@@ -1,0 +1,1 @@
+git log -S "AFX_NO_MFC_CONTROLS_IN_DIALOGS" --source --branches=$(git branch) --pretty="%H %cd" --date="raw" | sort -k2 | head -n1 | cut -d' ' -f1

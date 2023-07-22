@@ -1,0 +1,1 @@
+cat json.json | jq '' | grep -A 1 yoururl | grep secret | cut -d'"' -f4 | xargs curl -Ss | jq -r '.flag'
