@@ -1,0 +1,1 @@
+ls -1 | xargs -I {} sh -c '[[ $(echo "{}" | bc -l) -ne $(wc -c "{}" | cut -d" " -f1) ]] && cat "{}" && echo'

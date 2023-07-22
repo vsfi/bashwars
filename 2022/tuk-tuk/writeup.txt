@@ -1,0 +1,1 @@
+for i in $(seq 80 109); do if [[ $(($i % 2 )) == 1 ]]; then curl -A "Poopsen" localhost:$i; else curl -A "Woopsen" localhost:$i; fi done

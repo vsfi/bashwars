@@ -1,0 +1,1 @@
+curl -s -u $USER:$(echo -n $USER| md5sum | cut -d' ' -f1|rev) -A "Mozilla/5.0" http://localhost:5000/ | jq -r '.[] .balance' |  sed "s/[$,]//g" | paste -s -d+ | bc

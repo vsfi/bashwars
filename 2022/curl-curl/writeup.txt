@@ -1,0 +1,1 @@
+cat domains | xargs -I % sh -c "echo -n %:; curl -Ss % | grep -c SUCCESS" | sort -n -k2 -t:
