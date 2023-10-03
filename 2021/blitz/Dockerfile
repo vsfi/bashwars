@@ -17,7 +17,7 @@ RUN chmod +s /home/blitz/runner
 RUN rm /home/blitz/runner.c
 
 
-COPY *.txt /home/blitz
+COPY *.txt /home/blitz/
 
 WORKDIR /home/blitz
 
