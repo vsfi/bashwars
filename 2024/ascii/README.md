@@ -19,9 +19,7 @@ The task is to find all the pictures 114x128 sized, cut and print them via `asci
    ![Combine](attachments/image-4.png)
 1. The final part: interate over list and cut pictures via `dd`. Use counter to keep the correct order.
 
-```
-binwalk image.png | grep 114 -A 1 | grep -v -- -- | awk '{print $1}' | paste -d ' ' - - | while read number1 number2; do dd if=image.png of=flag$((counter++)).jpg bs=1 skip=$number1 count=$number2 status=none; done && ascii-image-converter flag*
-```
+`binwalk image.png | grep 114 -A 1 | grep -v -- -- | awk '{print $1}' | paste -d ' ' - - | while read number1 number2; do dd if=image.png of=flag$((counter++)).jpg bs=1 skip=$number1 count=$number2 status=none; done && ascii-image-converter flag*`
 
 ## simplify
 
@@ -37,6 +35,4 @@ binwalk image.png | grep 114 -A 1 | grep -v -- -- | awk '{print $1}' | paste -d 
 
 so you can use constant offset
 
-```
-binwalk image.png | grep 114 | awk '{print $1}' | xargs -I % bash -c 'dd if=image.png bs=1 skip=% count=$((%+152)) status=none | ascii-image-converter -'
-```
+`binwalk image.png | grep 114 | awk '{print $1}' | xargs -I % bash -c 'dd if=image.png bs=1 skip=% count=$((%+152)) status=none | ascii-image-converter -'`
